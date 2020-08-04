@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 * {
   box-sizing: border-box;
@@ -12,12 +13,18 @@ html {
 
 body {
   font-size: 1rem;
-  margin: 0;
   line-height: 1.65;
+  margin: 0 !important;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
 }
 
 #header {
     position: fixed;
+    z-index: 2;
     height: 3.25rem;
     width: 100%;
     line-height: 3.25rem;
@@ -34,9 +41,42 @@ body {
 }
 
 #banner {
+  position: relative;
   background-color: #2c2c2c;
-  background-image: url(../../images/laptop.jpg);
   height: 35rem;
+}
+
+#banner-left {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  left: 0;
+  background-image: url(../../images/laptop.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#banner-right {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  background-color: #000000;
+}
+
+#name-info {
+  z-index: 1;
+  position: absolute;
+  top: 10rem;
+  left: 3rem;
+  color: #ffffff;
+}
+
+.fa-facebook {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
 }
 
 .wrapper {
