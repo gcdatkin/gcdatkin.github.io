@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 11pt;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.65;
+}
+
+#header {
+    position: fixed;
+    height: 3.25rem;
+    width: 100%;
+    line-height: 3.25rem;
+    background-color: #111111;
+}
+
+#header .logo {
+    height: inherit;
+    line-height: inherit;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 0 1.25rem;
+    text-decoration: none;
+}
+
+#banner {
+  background-color: #2c2c2c;
+  background-image: url(../../images/laptop.jpg);
+  height: 35rem;
+}
+
+.wrapper {
+  padding: 8rem 0 6rem 0;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 75rem;
+  max-width: calc(100% - 6rem);
+}
+
+#cta {
+  background-color: #2c2c2c;
+}
+
+#footer {
+  background-color: #111111;
+  padding: 8rem 0 6rem 0;
+}
